@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+:root {
+    --main-color: lightslategray;
+    --secondary-color: rgb(251, 207, 215);
+    --font-family: 'Marcellus', serif;
+}
+body {
+    margin:0;
+    padding:0;
+    background: #fffefc;
+    background-image: 
+    radial-gradient(circle at 20% 30%, rgba(119, 136, 153, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 190, 215, 0.4) 0%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    height: 8vh;
+    margin-bottom: 0;
+}
+.left-header {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.logo {
+    font-family: var(--font-family);
+    margin:0 2px;
+}
+.ac {
+    font-family: var(--font-family);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+ul {
+    list-style: none;
+    display: flex; 
+    margin-top: 7px; 
+}
+ul a {
+    text-decoration: none;
+    padding-left: 2rem;
+    color: black;
+}
+ul a:hover {
+    color: lightslategray;
+
+}
+.social-media {
+    display: flex;
+    justify-content: flex-end;  
+}
+.social-media a {
+    text-decoration: none;
+    padding:0 1rem;
+    margin: 10px;
+    color: black;
+
+}
+.social-media a:hover {
+    color: lightslategray;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+.portfolio h1{
+    border: 1px solid black;
+    clip-path: ellipse(100% 50% at 50% 50%);
+    font-family: var(--font-family);
+    color: black;
+    font-size: 10rem;
+    font-weight: 400;
+    padding: 3rem;
+}
+
+.hero::after {
+    content:'Welcome to my';
+    font-family: var(--font-family);
+    color: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 10rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    position: absolute;
+    left:26%;
+    top:34%;
+}
+
+.stars {
+    width: 3rem;
+    display: flex;
+    background-color:transparent;
+    position: absolute;
+    left:65%;
+    top:69%;
+}
+.developer {
+    position: absolute;
+    bottom: 16rem;
+    left: 50rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: var(--font-family);
+}
+#about-me {
+  padding: 80px 20px;
+  background: transparent;
+  color: #222;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1 1 500px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--main-color);
+    margin-top: 10px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.about-text .connect a{
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.about-image img {
+    width: 20rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.03);
+}
+
+#projects {
+    background: #fffefc;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(119, 136, 153, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(255, 190, 215, 0.4) 0%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+.projects-wrapper {
+    padding: 80px 20px;
+    margin-top:5rem;
+    background: transparent;
+    color: #222;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 5rem;
+}
+.title-projects{
+    margin-top: 5rem;
+    grid-column: span 2;
+    text-align: center;
+
+}
+.project-1, .project-2, .project-3, .project-4 {
+    border-left: 3px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.395);
+    backdrop-filter: blur(70px);
+} 
+.project-1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.project-2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.project-3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.project-4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.skills-title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.skill-wrapper {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 50px 20px;
+    margin-top:5rem;
+    background: transparent;
+    color: #222;
+    max-width:100%;
+    margin: 0 auto;
+}
+.technical, .soft {
+    border-left: 3px solid black;
+    padding-left: 2rem;
+}
+.skills-1, .skills-2 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.site-footer {
+  background-color: #f7f7f7;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 2px solid #ddd;
+}
+
+.site-footer a {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: rgb(31, 44, 157);
+}
+
+.footer-contact,
+.footer-social,
+.footer-bottom {
+  margin-bottom: 2rem;
+}
+
+.footer-social h2 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem;
+}
+
+
+/* AGGIUNTO: base animazioni */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* AGGIUNTO: animazioni agli elementi principali */
+.portfolio h1 {
+  animation: fadeInUp 1s ease-out forwards;
+}
+.stars, .developer {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* MODIFICA: responsive layout */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero::after {
+        font-size: 0.8em;
+        left: 8rem;
+        top: 20rem;
+        transform: translateX(-50%);
+    }
+
+    .portfolio h1 {
+        font-size: 6rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .stars {
+        position: absolute;
+        right: 15rem;
+        top: 31rem;
+        display: flex;
+        justify-content: center;
+        margin-top: -2rem;
+    }
+
+    .developer {
+        position: static;
+        text-align: center;
+        margin-top: 1rem;
+    
+}
+#about-me {
+  padding: 80px 20px;
+  color: #222;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--main-color);
+    margin-top: 10px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.about-text .connect a{
+    font-weight: 500;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.about-text .connect a:hover {
+    text-decoration: underline;
+}
+
+.about-image img {
+    width: 20rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.03);
+}
+
+#projects {
+    background: #fffefc;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(119, 136, 153, 0.4) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(255, 190, 215, 0.4) 0%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+.projects-wrapper {
+    padding: 2rem 1rem;
+    background: transparent;
+    color: #222;
+    max-width: 600px;
+    margin: 1rem 1rem;
+    display: block;
+}
+.title-projects{
+    text-align:left;
+}
+.project-1, .project-2, .project-3, .project-4 {
+    border-left: 3px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 25rem;
+    background-color: rgba(255, 255, 255, 0.395);
+    backdrop-filter: blur(70px);
+    margin-bottom: 2rem;
+} 
+.skills-title {
+    text-align:start;
+    margin: 2rem 3rem;
+}
+
+.skill-wrapper {
+    display: block;
+    padding: 50px 20px;
+    margin-top:1rem;
+    background: transparent;
+    color: #222;
+}
+.technical, .soft {
+    margin: 0 auto;
+    border-left: 3px solid black;
+    padding-left: 2rem;
+    width: 90%
+}
+.skills-1, .skills-2 {
+    margin-bottom: 2rem;
+    display: block;
+    list-style: none;
+}
+
+}
