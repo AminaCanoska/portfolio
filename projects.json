@@ -1,0 +1,52 @@
+[
+    {
+      "title": "GoVegan Restaurant",
+      "description": "Un sito web moderno e responsivo per un ristorante vegano fittizio, realizzato con HTML, CSS, Bootstrap 5 e AOS. Presenta un design elegante, sezioni animate e un menù completamente a base vegetale. Ideale per mostrare competenze front-end con un’attenzione alla sostenibilità e alla cultura del cibo.",
+      "image": "img/govegan.png",
+      "technologies": ["HTML", "CSS", "Bootstrap"],
+      "liveDemo": "https://aminacanoska.github.io/GoVegan/",
+      "repo": "https://github.com/AminaCanoska/GoVegan"
+        
+    },
+    {
+      "title": "ToDoList",
+      "description": "ToDo List App - Mini esercizio per creare una semplice lista di cose da fare. Permette di aggiungere e rimuovere task. Progetto base, in fase di sviluppo (work in progress) pensato per fare pratica con funzionalità essenziali e UI minimale",
+      "image": "img/todolist.png",
+      "technologies": ["HTML", "CSS", "Javascript"],
+      "liveDemo":"https://aminacanoska.github.io/ToDoList/" ,
+      "repo": "https://github.com/AminaCanoska/ToDoList"
+
+    },
+    {
+      "title": "FitnessClub",
+      "description": "Sito web semplice e moderno per una palestra, realizzato con HTML, CSS e JavaScript. Presenta una homepage con sezioni dedicate ai corsi, agli orari, alle tariffe e ai contatti. Design chiaro e responsivo, pensato per offrire un’esperienza utente immediata anche da smartphone.",
+      "image": "img/fitnessclub.png",
+      "technologies": ["HTML", "CSS", "Javascript"],
+      "liveDemo": "???",
+      "repo": "https://github.com/AminaCanoska/Fitness-Website"
+
+    },
+    {
+      "title": "SpacedWebsite",
+      "description": "Spaced - Piccolo sito web creato per fare pratica con le API pubbliche della NASA. L'app mostra immagini e dati spaziali recuperati tramite fetch, con focus sull'interazione con API REST e la gestione dinamica dei contenuti. Progetto in corso, pensato come esercizio di apprendimento.",
+      "image": "img/spaced.png",
+      "technologies": ["HTML", "CSS", "Javascript", "API"],
+      "liveDemo": "https://aminacanoska.github.io/SpacedWebsite/",
+      "repo": "https://github.com/AminaCanoska/SpacedWebsite"
+
+    },
+    {
+      "title": "EnneagramType",
+      "description": "Questo è un piccolo progetto front-end sviluppato per fare pratica con l'utilizzo dei file JSON all'interno di un'applicazione web. L'obiettivo principale era comprendere come caricare, leggere e visualizzare dati strutturati in formato JSON, migliorando la mia familiarità con JavaScript e le tecniche di manipolazione del DOM.",
+      "image": "img/enneagramtype.png",
+      "technologies": ["HTML", "CSS", "Javascript", "JSON"],
+      "liveDemo": "https://aminacanoska.github.io/EnneagramType/",
+      "repo": "https://github.com/AminaCanoska/EnneagramType"
+
+    },
+    {
+      "title": "More to come...",
+      "description": "In fase di continuo lavoro e sviluppo, successivamente verranno inseriti ulteriori progetti",
+      "image": "img/developer.jpg"
+    }
+]
