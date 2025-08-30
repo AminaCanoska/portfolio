@@ -95,7 +95,7 @@ ul a:hover {
     flex-direction: column-reverse;
     gap: 2rem;
     position: fixed;
-    top: 5vh;
+    top: 8vh;
     left: 50%;
     transform: translateX(-50%);
     max-height: 90vh;
@@ -203,9 +203,24 @@ ul a:hover {
     border: 1px solid var(--main-color);
     color: var(--main-color);
     font-family: var(--font-family);
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease;
 }
 .work-with-me-btn, .p-buttons {
   margin-top: 5rem;
+}
+/* Animazione */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 #contactForm, #projectForm, #budgetForm, #tempisticheForm, #commentForm, #privacyForm {
@@ -717,7 +732,7 @@ body::before {
 
 
 /* RESPONSIVE DESIGN - MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
 body {
     position: relative;
@@ -754,7 +769,7 @@ body::before {
   /* Hero after text mobile */
   .hero::after {
     font-size: 0.8rem;
-    top: 15%;
+    top: 16%;
     left: 40%;
     transform: translate(-85%, -60%);
     height: 1.5rem;
@@ -780,28 +795,55 @@ body::before {
 
   /* Contact Form mobile */
   #contactForm.backdrop-show {
-    display: block !important;
     max-height: 90vh;
-    width: 90vw;
+    width: 95%;
     padding: 0;
+  }
+  .module-title {
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+    font-size: 1.3rem;
   }
   .form-content  {
     padding: 1rem 0;
+    width: 100;
+  }
+  .grid {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .actions {
-    gap: 20rem;
+    gap: 13rem;
   }
-
   .field-project {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.5rem;
   } 
-  #privacyForm {
-    width: 80%;
+  #initialForm, #projectForm, #budgetForm, #tempisticheForm, #commentForm, #privacyForm {
+    width: 90%;
   }
-
+  #initialForm .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+  #initialForm input {
+    width: 19rem;
+    height: 2.5rem;
+  }
+  .field-nome-cognome div {
+    display: flex;
+    flex-direction: column;
+  }
   /* About section mobile */
   .about-wrapper {
     flex-direction: column;
@@ -819,7 +861,7 @@ body::before {
   }
   
   .the-project {
-    width: 90%;
+    min-width: 100%;
   }
   
   /* Skills mobile */
