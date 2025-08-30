@@ -83,11 +83,6 @@ async function getProjects() {
     projects.forEach(p => project(p.title, p.description, p.image, p.technologies, p.liveDemo, p.repo));
     let lastP = projects[5];
     console.log(lastP);
-    lastP.addEventListener("mouseover", moreToCome)
-    function moreToCome(){
-      console.log("hi")
-    }
-    console.log(lastP);
   } catch (err) {
     console.log(err);
   }
@@ -120,45 +115,81 @@ function project(title, description, image, technologies, liveDemo, repo) {
   pTechnologies.textContent = `Tecnologie usate: ${technologies}`;
   theProject.appendChild(pTechnologies);
 
-  const overlay = ce("div");
-  overlay.classList.add("project-overlay");
-  theProject.appendChild(overlay);
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
 
-  theProject.addEventListener("mouseover", () => {
-    overlay.style.opacity = "1";
-    createBtns();
-  });
-  theProject.addEventListener("mouseout", () => {
-    overlay.style.opacity = "0";
-  });
-
-  function createBtns() {
-    if (theProject.querySelector(".reference-container")) return;
-
-    const buttonContainer = ce("div");
-    buttonContainer.classList.add("reference-container");
-    overlay.appendChild(buttonContainer);
+  if (isMobile) {
+    // ✅ Modalità mobile: aggiungi bottoni direttamente sotto pDescription
+    const btnWrapper = ce("div");
+    btnWrapper.classList.add("mobile-buttons");
 
     const pLiveDemo = ce("button");
-    pLiveDemo.classList.add("projects-btns");
+    pLiveDemo.classList.add("work-with-me-btn");
     pLiveDemo.setAttribute("data-url", liveDemo);
-    pLiveDemo.textContent = "Dai un'occhiata";
-    buttonContainer.appendChild(pLiveDemo);
+    pLiveDemo.textContent = "Vai Al Sito!";
+    btnWrapper.appendChild(pLiveDemo);
 
     const pRepo = ce("button");
-    pRepo.classList.add("projects-btns");
+    pRepo.classList.add("work-with-me-btn");
     pRepo.setAttribute("data-url", repo);
     pRepo.textContent = "Repository";
-    buttonContainer.appendChild(pRepo);
+    btnWrapper.appendChild(pRepo);
+
+    theProject.appendChild(btnWrapper);
 
     function openDemo(event) {
       const url = event.currentTarget.getAttribute("data-url");
       if (url) window.open(url, "_blank");
     }
+
     pLiveDemo.addEventListener("click", openDemo);
     pRepo.addEventListener("click", openDemo);
+
+  } else {
+    // ✅ Modalità desktop/tablet: overlay con bottoni su hover
+    const overlay = ce("div");
+    overlay.classList.add("project-overlay");
+    theProject.appendChild(overlay);
+
+    theProject.addEventListener("mouseover", () => {
+      overlay.style.opacity = "1";
+      createBtns();
+    });
+
+    theProject.addEventListener("mouseout", () => {
+      overlay.style.opacity = "0";
+    });
+
+    function createBtns() {
+      if (theProject.querySelector(".reference-container")) return;
+
+      const buttonContainer = ce("div");
+      buttonContainer.classList.add("reference-container");
+      overlay.appendChild(buttonContainer);
+
+      const pLiveDemo = ce("button");
+      pLiveDemo.classList.add("projects-btns");
+      pLiveDemo.setAttribute("data-url", liveDemo);
+      pLiveDemo.textContent = "Vai Al Sito!";
+      buttonContainer.appendChild(pLiveDemo);
+
+      const pRepo = ce("button");
+      pRepo.classList.add("projects-btns");
+      pRepo.setAttribute("data-url", repo);
+      pRepo.textContent = "Repository";
+      buttonContainer.appendChild(pRepo);
+
+      function openDemo(event) {
+        const url = event.currentTarget.getAttribute("data-url");
+        if (url) window.open(url, "_blank");
+      }
+
+      pLiveDemo.addEventListener("click", openDemo);
+      pRepo.addEventListener("click", openDemo);
+    }
   }
 }
+
+
 
 /* ====== FORM MODALE ====== */
 // Usa un id dedicato per il bottone che apre il form

@@ -18,12 +18,12 @@
 
     },
     {
-      "title": "FitnessClub",
-      "description": "Sito web semplice e moderno per una palestra, realizzato con HTML, CSS e JavaScript. Presenta una homepage con sezioni dedicate ai corsi, agli orari, alle tariffe e ai contatti. Design chiaro e responsivo, pensato per offrire un’esperienza utente immediata anche da smartphone.",
-      "image": "img/fitnessclub.png",
+      "title": "Blog Template",
+      "description": "Template semplice e responsive per blog statici, creato per esercitarmi con HTML, CSS e JavaScript.  Include pagine per articoli, una sezione FAQ interattiva, ricerca con filtro client-side e uno stile personalizzabile basato su variabili CSS.",
+      "image": "img/blog-template.png",
       "technologies": ["HTML", "CSS", "Javascript"],
-      "liveDemo": "???",
-      "repo": "https://github.com/AminaCanoska/Fitness-Website"
+      "liveDemo":"https://aminacanoska.github.io/BlogAC/",
+      "repo": "https://github.com/AminaCanoska/BlogAC"
 
     },
     {
