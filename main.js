@@ -343,12 +343,8 @@ function bindStepButtonsOnce() {
 }
 
 
-
-
-// --- riferimenti utili ---
-// Le variabili sono già dichiarate sopra con GetById()
-
 // --- validazione campi form ---
+// ⚙️ La tua funzione di validazione
 function validateName(value, minLength = 2) {
   const trimmed = value.trim();
   if (!trimmed) return { ok: false, msg: "Il campo è obbligatorio." };
@@ -356,6 +352,7 @@ function validateName(value, minLength = 2) {
   if (trimmed.length > 80) return { ok: false, msg: "Il campo non può superare 80 caratteri." };
   return { ok: true, value: trimmed };
 }
+
 
 function validateSelect(value, required = true) {
   if (required && !value) return { ok: false, msg: "Seleziona una voce." };
