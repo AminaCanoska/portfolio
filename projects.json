@@ -9,6 +9,15 @@
         
     },
     {
+      "title": "HiltonHotel",
+      "description": "Questo progetto è un template responsive per un sito web di un hotel, sviluppato per esercitarmi con HTML, CSS, JavaScript e Bootstrap. Include sezioni come home, ristorante, contatti, sport e relax, con animazioni AOS e uno stile moderno basato su una palette di tonalità blu.",
+      "image": "img/hiltonhotel.png",
+      "technologies": ["HTML", "CSS", "Bootstrap"],
+      "liveDemo": "https://aminacanoska.github.io/HiltonHotel/",
+      "repo": "https://github.com/AminaCanoska/HiltonHotel"
+        
+    },
+    {
       "title": "ToDoList",
       "description": "ToDo List App - Mini esercizio per creare una semplice lista di cose da fare. Permette di aggiungere e rimuovere task. Progetto base, in fase di sviluppo (work in progress) pensato per fare pratica con funzionalità essenziali e UI minimale",
       "image": "img/todolist.png",
