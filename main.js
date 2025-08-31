@@ -699,5 +699,6 @@ contactForm.addEventListener("submit", async (e) => {
   }
 });
 
+
 // Inizializza gli step quando la pagina si carica
 document.addEventListener('DOMContentLoaded', initializeSteps);

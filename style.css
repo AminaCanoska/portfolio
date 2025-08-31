@@ -68,6 +68,7 @@ ul a {
     font-family: "Sulphur Point", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.05rem;
     text-decoration: none;
     padding-left: 2rem;
     color: black;
@@ -178,7 +179,7 @@ ul a:hover {
     padding-left: 0.5rem;
     position: absolute;
     left: 26%;
-    top: 23%;
+    top: 26%;
     animation: fadeDownAnim 0.6s ease-out forwards;
 }
 @keyframes fadeDownAnim {
@@ -193,8 +194,8 @@ ul a:hover {
     display: flex;
     background-color:transparent;
     position: absolute;
-    left: 70%;
-    top: 62%;
+    left: 69%;
+    top: 60%;
 }
 .developer {
     position: absolute;
@@ -235,6 +236,7 @@ ul a:hover {
 #contactForm, #projectForm, #budgetForm, #tempisticheForm, #commentForm, #privacyForm {
   display: none;
   width: 90%;
+  font-size: 1.1rem;
 }
 #initialForm { 
   display: block;
@@ -242,7 +244,7 @@ ul a:hover {
 }
 #initialForm input {
   width: 100%;
-  height: 3rem;
+  height: 3.1rem;
 }
 
 #projectForm.show {
@@ -344,16 +346,25 @@ input:focus, .selection:focus{
 .field-nome-cognome div {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  margin-top: 1rem;
 }
 .field-project {
   display: flex;
   flex-direction: column;
 }
+.field-project textarea {
+  height: 14rem;
+}
 .field {
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
+}
+.field #website {
+  height: 3.1rem;
+}
+#privacyForm {
+  margin: 9rem ;
 }
 .privacy-policy {
   text-decoration: none;
@@ -388,6 +399,7 @@ input:focus, .selection:focus{
   display: flex;
   justify-content: space-evenly;
   gap: 25rem;
+  padding: 2rem 0;
 }
 .arrow {
   background-color: transparent;
@@ -409,9 +421,10 @@ input:focus, .selection:focus{
   align-items: center;
   gap: .6rem;
   padding: .6rem .8rem;
+  margin: .45rem 0;
+  height: 3.1rem;
   border: 1px solid #e0e4ec;
   border-radius: 10px;
-  margin: .45rem 0;
   cursor: pointer;
   user-select: none;
   transition: border-color .15s, box-shadow .15s, background .15s;
@@ -439,7 +452,7 @@ input:focus, .selection:focus{
 }
 
 
-
+/*ABOUT ME*/
 #about-me {
   padding: 80px 20px;
   background: transparent;
@@ -487,6 +500,11 @@ input:focus, .selection:focus{
 .about-text .connect a{
     font-weight: 500;
     color: var(--main-color);
+    text-decoration: none;
+}
+.about-text .connect a:hover {
+  color: black;
+  border: 1pc splid black;
 }
 
 .about-image img {
@@ -499,6 +517,7 @@ input:focus, .selection:focus{
 .about-image img:hover {
     transform: scale(1.03);
 }
+
 
 #projects-wrapper {
     background: #fffefc;
@@ -620,10 +639,12 @@ input:focus, .selection:focus{
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: rgb(31, 44, 157);
+  border: none;
+  box-shadow: 2px 4px 6px grey;
 }
 
 .footer-contact,
@@ -810,9 +831,10 @@ body::before {
 
   /* Contact Form mobile */
   #contactForm.backdrop-show {
-    max-height: 90vh;
+    height: 90vh;
     width: 95%;
     padding: 0;
+    font-size: 1.1rem;
   }
   .module-title {
     margin: 0 auto;
@@ -832,7 +854,8 @@ body::before {
     align-items: center;
   }
   .actions {
-    gap: 13rem;
+    gap: 14rem;
+    padding: 2rem 0;
   }
   .field-project {
     display: flex;
