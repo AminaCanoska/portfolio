@@ -260,11 +260,10 @@ ul a:hover {
   width: 100%;
   height: 3.1rem;
 }
-
 #projectForm.show {
   display: block;
+  height: 5rem;
 }
-  
 #contactForm.backdrop-show {
   /*display: block !important;*/
   background: #fffefc;
@@ -275,7 +274,7 @@ ul a:hover {
   background-size: cover;
   position: fixed;
   overflow-y: auto;
-  top: 5vh;
+  top: 3vh;
   left: 50%;
   transform: translateX(-50%);
   max-height: fit-content;
@@ -320,16 +319,14 @@ input:focus, .selection:focus{
   border: 2px solid lightgray;
 }
 .torna-indietro-btns {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
+  background-color: white;
+  display: block;
   width: 100%;
+  gap: 1rem;
+  height: fit-content;
   margin: 0;
   padding: 1rem;
-  position: sticky;
   top: 0;
-  background-color: #fffefc;
-  z-index: 10;
   border-radius: 30px 30px 0 0;
 }
 
@@ -362,17 +359,17 @@ input:focus, .selection:focus{
   flex-direction: column;
   margin-top: 1rem;
 }
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
 .field-project {
   display: flex;
   flex-direction: column;
 }
 .field-project textarea {
   height: 14rem;
-}
-.field {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 0;
 }
 .field #website {
   height: 3.1rem;
@@ -845,7 +842,6 @@ body::before {
 
   /* Contact Form mobile */
   #contactForm.backdrop-show {
-    height: 90vh;
     width: 95%;
     padding: 0;
     font-size: 1.1rem;
@@ -858,7 +854,12 @@ body::before {
   }
   .form-content  {
     padding: 1rem 0;
-    width: 100;
+    width: 100%;
+    max-height: 85vh;      /* o 80vh, come preferisci */
+    overflow-y: auto;
+  }
+  #projectForm {
+    max-height: 83vh;
   }
   .grid {
     width: 100%;
