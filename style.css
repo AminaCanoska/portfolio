@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 :root {
     --main-color: lightslategray;
     --primary-color: rgba(255, 70, 227, 0.663);
@@ -14,6 +27,7 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
 body::before {
     content: "";
     position: absolute;
@@ -236,7 +250,7 @@ ul a:hover {
 #contactForm, #projectForm, #budgetForm, #tempisticheForm, #commentForm, #privacyForm {
   display: none;
   width: 90%;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 #initialForm { 
   display: block;
@@ -264,7 +278,7 @@ ul a:hover {
   top: 5vh;
   left: 50%;
   transform: translateX(-50%);
-  max-height: 90vh;
+  max-height: fit-content;
   box-sizing: border-box;
   width: 40vw;
   padding: 0;
@@ -364,7 +378,7 @@ input:focus, .selection:focus{
   height: 3.1rem;
 }
 #privacyForm {
-  margin: 9rem ;
+  margin: 5rem ;
 }
 .privacy-policy {
   text-decoration: none;
