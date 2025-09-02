@@ -858,7 +858,7 @@ body::before {
     width: 100%;
   }
   #projectForm {
-    height: 80vh;
+    height: fit-content;
   }
   .grid {
     width: 100%;
@@ -869,7 +869,6 @@ body::before {
   }
   .actions {
     gap: 14rem;
-    padding: 2rem 0;
   }
   .field-project {
     display: flex;
