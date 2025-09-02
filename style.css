@@ -320,7 +320,6 @@ input:focus, .selection:focus{
 }
 .torna-indietro-btns {
   background-color: white;
-  position: sticky;
   width: 100%;
   gap: 1rem;
   height: fit-content;
