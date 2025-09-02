@@ -320,7 +320,6 @@ input:focus, .selection:focus{
 }
 .torna-indietro-btns {
   background-color: white;
-  display: block;
   position: sticky;
   width: 100%;
   gap: 1rem;
@@ -857,7 +856,6 @@ body::before {
     font-size: 1.3rem;
   }
   .form-content  {
-    padding-top: 10rem;
     width: 100%;
   }
   #projectForm {
@@ -936,5 +934,6 @@ body::before {
     width: 100%;
   }
 }
+
 
 

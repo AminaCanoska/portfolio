@@ -289,7 +289,6 @@ function initializeSteps() {
     }
   });
 }
-
 function showStep(index) {
   console.log(`showStep chiamata con indice: ${index}`);
   currentStep = Math.max(0, Math.min(index, STEP_IDS.length - 1));
