@@ -214,7 +214,6 @@ function tornaIndietro() {
 
 
 function showModule() {
-  console.log("showModule chiamata - Inizializzazione step...");
   
   const bodyOverlay = ce("div");
   bodyOverlay.classList.add("body-overlay");
@@ -229,16 +228,6 @@ function showModule() {
   });
 
   GetById("tornaIndietroBtn")?.addEventListener("click", tornaIndietro);
-  /*
-  GetById("cancelBtn")?.addEventListener("click", (e) => {
-    e.preventDefault();      // il type="reset" resetta, noi chiudiamo anche
-    contactForm.reset();
-    tornaIndietro();
-  });
-  */
-
-  // Forza l'inizializzazione degli step prima di tutto
-  console.log("Forzo l'inizializzazione degli step...");
   
   // Nascondi TUTTI gli step prima
   STEP_IDS.forEach((id) => {
@@ -340,19 +329,31 @@ function validateCurrentStep() {
 }
 
 function bindStepButtonsOnce() {
-  const avantiBtn = GetById('avantiBtn');
-  const cancelBtn = GetById('cancelBtn');
-  const form      = GetById('contactForm');
+const avantiBtn = GetById('avantiBtn');
+const cancelBtn = GetById('cancelBtn');
+const form      = GetById('contactForm');
 
-  if (avantiBtn && !avantiBtn.dataset.bound) {
-    avantiBtn.dataset.bound = '1';
-    avantiBtn.addEventListener('click', () => {
-      // se è submit (ultimo step) lascia inviare al browser
-      if (avantiBtn.getAttribute('type') === 'submit') return;
-      if (!validateCurrentStep()) return;
-      showStep(currentStep + 1);
+if (avantiBtn && !avantiBtn.dataset.bound) {
+  avantiBtn.dataset.bound = '1';
+
+  avantiBtn.addEventListener('click', () => {
+    // Se è submit (ultimo step), lascia che venga inviato
+    if (avantiBtn.getAttribute('type') === 'submit') return;
+
+    // Valida lo step attuale
+    if (!validateCurrentStep()) return;
+
+    // Mostra il prossimo step
+    showStep(currentStep + 1);
+
+    // Scrolla il form all’inizio (top del div)
+    form.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
     });
-  }
+  });
+}
+
   const lastIndex = STEP_IDS.length - 1;
 
   if (cancelBtn && !cancelBtn.dataset.bound) {

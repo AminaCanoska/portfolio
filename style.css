@@ -408,17 +408,18 @@ input:focus, .selection:focus{
   width: fit-content;
   display: flex;
   justify-content: space-evenly;
-  gap: 25rem;
-  padding: 2rem 0;
 }
 .arrow {
   background-color: transparent;
   border: none;
 }
+.arrow img {
+  width: 2.5rem;
+
+}
 .radio-group {
   border: 0;
   padding: 0;
-  margin: 1rem 0;
 }
 
 .radio-group legend {
