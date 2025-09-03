@@ -469,6 +469,7 @@ input:focus, .selection:focus{
   background: transparent;
   color: #222;
   max-width: 1200px;
+  height: fit-content;
   margin: 0 auto;
 }
 
