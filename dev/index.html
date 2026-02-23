@@ -1,0 +1,362 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amina Canoska | Web Developer & Designer</title>
+    <meta name="description" content="Amina Canoska's portfolio showcasing web development projects, skills, and contact information.">
+    <meta name="keywords" content="Amina Canoska, Portfolio, Web Developer, Designer, HTML, CSS, JavaScript, Projects">
+    <meta name="author" content="Amina Canoska">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amina Canoska | Web Developer & Designer">
+    <meta property="og:description" content="Amina Canoska's portfolio showcasing web development projects, skills, and contact information.">
+    <meta property="og:image" content="https://aminacanoska.github.io/portfolio//img/image-og.jpg"> 
+    <meta property="og:url" content="https://aminacanoska.github.io/portfolio/"> 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amina Canoska | Web Developer & Designer">
+    <meta name="twitter:description" content="Amina Canoska's portfolio showcasing web development projects, skills, and contact information.">
+    <meta name="twitter:image" content="https://aminacanoska.github.io/portfolio//img/image-og.jpg"> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Replace with actual favicon URL -->
+    <meta name="linkedin:title" content="Amina Canoska | Web Developer & Designer">
+    <meta name="linkedin:description" content="Amina Canoska's portfolio showcasing web development projects, skills, and contact information.">
+    <meta name="linkedin:image" content="https://aminacanoska.github.io/portfolio//img/image-og.jpg">
+    <meta name="linkedin:url" content="https://aminacanoska.github.io">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Replace with actual favicon URL -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> <!-- Replace with actual apple touch icon URL -->
+    <link rel="canonical" href="https://aminacanoska.github.io"> <!-- Replace with actual URL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p class="logo">Amin<span class="ac">AC</span>anoska</p>
+        <div class="left-header" data-aos="fade-down">  
+        <nav>
+            <ul id="portfolio-btns">
+                <li><a href="#about-me" alt="About Me" data-aos="fade-down">About Me</a></li>
+                <li><a href="#projects" alt="My Projects" data-aos="fade-down">Progetti</a></li>
+                <li><a href="#skills" alt="My Skills" data-aos="fade-down">Technical & Soft Skills</a></li>
+                <li><a href="#contact" alt="Contact Me" data-aos="fade-down">Contatti</a></li>
+            </ul>
+        </nav>
+        </div>
+    
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/amina-canoska-043852290/" alt="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.png" alt="LinkedIn" width="30px" height="30px" data-aos="fade-down"></a>
+        <a href="https://github.com/AminaCanoska" alt="GitHub" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="GitHub" width="30px" height="30px" data-aos="fade-down"></a>
+        <a href="https://www.instagram.com/amina_canoska/" alt="Instagram" target="_blank" rel="noopener noreferrer"><img src="img/ig.png" alt="instagram" width="30px" height="30px" data-aos="fade-down"></a> 
+    </div>    
+</header>
+
+
+    <main>  
+
+        <div class="hero"> 
+        <div class="portfolio" data-aos="zoom-in-right">  
+            <h1 id="title-portfolio">Portfolio</h1>
+        </div>
+        <div class="stars">  
+            <p><img src="img/star.png" alt="Star Icon" width="20rem"></p>
+            <p><img src="img/star.png" alt="Star Icon" width="25rem"></p>
+            <p><img src="img/star.png" alt="Star Icon" width="20rem"></p>
+        </div>
+        <div class="developer">  
+            <p>&lt; WEB DEVELOPER /&gt;</p>
+        </div>
+        <button type="button" class="work-with-me-btn" id="openContactBtn">Lavora con me</button>
+        </div>
+
+
+        <form id="contactForm" method="POST" action="https://formspree.io/f/xgvzqkbe">
+
+            <div class="torna-indietro-btns">   
+            <button type="button" class="work-with-me-btn" id="tornaIndietroBtn">Torna Indietro</button>
+            </div>
+
+
+            <div class="form-content">
+            <h2 class="module-title">PARLIAMO DEL TUO PROGETTO</h2>
+            <span id="formStatus" aria-live="polite" style="margin:.5rem 0; font-size:.95rem; display:block;"></span>
+            <div class="grid">
+
+            <div id="initialForm">  
+          
+              <div class="field-nome-cognome">
+                <div>   
+                <label for="name">Nome:</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Inserisci il nome" required minlength="2" maxlength="80">
+                </div>
+                <div>    
+                <label for="cognome">Cognome:</label>
+                <input id="cognome" name="cognome" type="text" autocomplete="cognome" placeholder="Inserisci il cognome" required minlength="2" maxlength="80">
+                </div>
+              </div>
+          
+              <div class="field">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="nome@azienda.it" autocomplete="email" required inputmode="email">
+                <div class="error-msg" aria-live="polite">Inserisci un’email valida.</div>
+              </div>
+          
+              <div class="field">
+                <label for="company">Azienda (opzionale):</label>
+                <input id="company" name="company" type="text" placeholder="Es. ACME S.r.l." autocomplete="organization">
+              </div>
+
+            </div>
+            <div class="actions" id="formActions">
+                <button type="reset" class="arrow" id="cancelBtn">
+                  <img src="img/left-double.png" alt="Torna Indietro" class="right-img ">
+              </button>
+              <button type="button" class="arrow" id="avantiBtn">
+                  <img src="img/right-double.png" alt="Vai Avanti" class="right-img ">
+             </button>
+             <button type="submit" class="work-with-me-btn" id="submitBtn" style="display:none">
+                Invia
+              </button>
+            </div>
+        </div>
+
+        <div id="projectForm">
+          <fieldset class="field radio-group" aria-required="true">
+            <legend>Tipo di progetto o servizio richiesto:</legend>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="Sito vetrina" required>
+              <span>Sito vetrina</span>
+            </label>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="E-commerce">
+              <span>Sviluppo e-commerce</span>
+            </label>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="Web app">
+              <span>Web app / App personalizzata</span>
+            </label>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="Landing page">
+              <span>Landing page promozionale</span>
+            </label>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="Graphic design / Branding">
+              <span>Graphic design / Branding</span>
+            </label>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="Social media">
+              <span>Gestione social media</span>
+            </label>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="Consulenza">
+              <span>Consulenza / Supporto</span>
+            </label>
+        
+            <label class="radio-tile">
+              <input type="radio" name="projectType" value="Altro">
+              <span>Altro (specifica sotto)</span>
+            </label>
+        
+            <div class="error-msg">Scegli una voce.</div>
+          </fieldset>
+        </div>
+        
+
+          <div id="budgetForm">
+            <fieldset class="field radio-group" aria-required="true">
+              <legend>Budget indicativo:</legend>
+          
+              <label class="radio-tile">
+                <input type="radio" name="budget" value="< €500" required>
+                <span>&lt; €500</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="budget" value="€500 - €3.000">
+                <span>€500 - €3.000</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="budget" value="€3.000 - €7.000">
+                <span>€3.000 - €7.000</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="budget" value="€7.000 - €15.000">
+                <span>€7.000 - €15.000</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="budget" value="> €15.000">
+                <span>&gt; €15.000</span>
+              </label>
+          
+              <div class="error-msg">Indica una fascia di budget.</div>
+            </fieldset>
+          </div>
+          
+
+          <div id="tempisticheForm">
+            <fieldset class="field radio-group">
+              <legend>Tempistiche ideali:</legend>
+          
+              <label class="radio-tile">
+                <input type="radio" name="timeline" value="Flessibili" checked>
+                <span>Flessibili</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="timeline" value="Subito">
+                <span>Subito</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="timeline" value="1-3 mesi">
+                <span>1-3 mesi</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="timeline" value="3-6 mesi">
+                <span>3-6 mesi</span>
+              </label>
+          
+              <label class="radio-tile">
+                <input type="radio" name="timeline" value="> 6 mesi">
+                <span>&gt; 6 mesi</span>
+              </label>
+            </fieldset>
+          </div>
+          
+
+            <div id="commentForm">   
+          
+              <div class="field-project full">
+                <label for="message">Raccontami il progetto:</label>
+                <textarea id="message" name="message" placeholder="Obiettivi, funzionalità chiave, riferimenti, scadenze…" minlength="20" maxlength="2000" class="selection" required></textarea>
+                <div class="error-msg">Scrivi almeno 20 caratteri.</div>
+              </div>
+          
+              <div class="field full">
+                <label for="website">URL (se presente):</label>
+                <input id="website" name="website" type="url" inputmode="url" placeholder="https://www.esempio.it" pattern="https?://.+">
+                <div class="error-msg">Inserisci un URL valido che inizi con http(s)://</div>
+              </div>
+
+            </div>
+          
+              <!-- Honeypot anti-spam -->
+              <div class="visually-hidden">
+                <label for="hp">Lascia questo campo vuoto</label>
+                <input id="hp" name="hp" type="text" tabindex="-1" autocomplete="off">
+              </div>
+          <div id="privacyForm">   
+              <!-- Consenso -->
+              <label for="consent">Acconsento al trattamento dei dati personali secondo la <a href="privacy.html" target="_blank" rel="noopener" class="privacy-policy">Privacy Policy</a>. <input id="consent" class="checkbox" type="checkbox" required></label>
+              <div class="error-msg">Devi accettare per inviare.</div>
+          </div>
+            </div>
+        </div>
+    </form>      
+          
+          
+  
+        <section id="about-me" >
+            <div class="about-wrapper" >
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Ciao, sono Amina. Mi sono laureata in Economia Aziendale nel 2019 e attualmente sto studiando Full-Stack Web Development per ampliare le mie competenze digitali e tecniche.</p>
+                    <p>Sto imparando a creare applicazioni web da zero utilizzando <strong> HTML, CSS, JavaScript,</strong>, oltre a <strong>tecnologie backend e framework moderni.</strong> Parallelamente, esploro come gli strumenti di  <strong>intelligenza artificiale</strong> possano supportare e velocizzare i processi creativi e tecnici — ma tengo molto a comprendere anche cosa succede "dietro le quinte".</p>
+                    <p>Mi piacciono il pensiero strutturato, la chiarezza visiva e il design funzionale. Credo nell’unione tra <strong>competenze tecniche</strong> e <strong>soft skills</strong> come la comunicazione, l’adattabilità e la curiosità — ed è proprio in questa direzione che sto crescendo.</p>
+                    <p>Al momento sono alla ricerca di opportunità da remoto o ibride — stage, ruoli di assistenza o progetti collaborativi — dove poter contribuire, imparare e continuare a fare esperienza concreta.</p>
+                    <p class="connect"> 
+                      <a href="#contact" alt="Connect" class="work-with-me-btn">Contattami</a>
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="img/me.jpeg" alt="My photo">
+                </div>
+             </div>
+        </section>
+     
+        <section id="projects-wrapper">
+            <h2 class="title-projects">Progetti</h2>
+
+            <div class="projects-container">
+            </div>
+        </section>
+
+          
+        <section id="skills">
+            <h2 class="skills-title">Technical & Soft Skills</h2>
+            <div class="skill-wrapper"> 
+                <div class="technical">
+                <h3>Technical Skills</h3>
+                <div class="skills-1">
+                    <li><strong>Programming:</strong> HTML, CSS, Bootstap, JavaScript, React, React Native, Node.js, AI</li>
+                    <li><strong>Design & Tools:</strong> Canva</li>
+                    <li><strong>Productivity:</strong> Microsoft Office</li>
+                    <li><strong>Collaborations:</strong> Git, GitHub</li>
+                </div>
+                </div>
+            <div class="soft">
+            <h3>Soft Skills</h3>
+                <div class="skills-2">
+                    <li>Communication.</li>
+                    <li>Adaptability.</li>
+                    <li>Problem-solving.</li>
+                    <li>Teamwork</li>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        </main>
+        
+        <footer class="site-footer">
+            <section id="contact" class="footer-contact">
+                <h2>Contattami</h2>
+                <p>Se vuoi metterti in contatto, sentiti libera/o di scrivermi via email o di collegarti con me su LinkedIn.</p> 
+                    <a href="mailto:aminaworksonline@gmail.com?subject=Ciao&body=Volevo%20contattarti%20per..." class="work-with-me-btn">Mandami una email</a>
+            </section>
+            <section class="footer-social">
+                <h2>Segui mi:</h2>
+                <p>
+                    <a href="https://www.linkedin.com/in/amina-canoska-043852290/" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/AminaCanoska" target="_blank">GitHub</a> |
+                    <a href="https://www.instagram.com/amina_canoska/" target="_blank">Instagram</a>
+                </p>
+            </section>
+            <section class="footer-bottom">
+                <p>&copy; 2025 Amina Canoska. All rights reserved.</p>
+                <p>Designed and developed by Amina Canoska.</p>
+            </section>
+            </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script type="module" src="main.js"></script>
+        <script>
+        AOS.init();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        <script src="main.js" type="module"></script>
+            
+        </body>
+</html>
