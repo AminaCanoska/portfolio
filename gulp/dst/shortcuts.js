@@ -1,0 +1,1 @@
+function qs(e){return e?document.querySelector(e):null}function qsa(e){return document.querySelectorAll(e)}function ce(e){return document.createElement(e)}function GetById(e){return document.getElementById(e)}export{qs,qsa,ce,GetById};
